@@ -1,0 +1,223 @@
+/* Fuente y fondo general */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #539bdf4f;
+  color: #080808;
+
+}
+
+
+/* Encabezado */
+.encabezado {
+  position: relative;
+  height: 360px;
+  text-align: center;
+  color: rgb(4, 2, 2);
+}
+.fondo-header {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 104%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6;
+}
+.contenido-header {
+  position: relative;
+  z-index: 2;
+  padding-top: 60px;
+}
+.foto-perfil {
+    width: 120px;
+    border-radius: 20%;
+}
+h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+
+/* Secciones */
+.seccion {
+  background-color: white;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 42px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.455);
+}
+.seccion h2 {
+  color: #222;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* Proyectos */
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.proyecto {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+/* Contacto */
+.contacto a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+
+/* Barra de navegación */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #ffffff00;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+  z-index: 1000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;padding: auto;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  display: inline;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #52cc00;
+}
+
+body {
+  padding-top: 60px;
+} /* Para evitar que el contenido quede oculto detrás del nav */
+
+/* Imagenes */
+.decoracion-derecha-1 {
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 50%;
+  width: 28%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.9;
+  right: 2%;
+  top: 30;
+}
+.decoracion-izquierda-2 {
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 50%;
+  width: 28%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.9;
+  left: 0.5%;
+  top: 70%;
+}
+.decoracion-derecha-3 {
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 50%;
+  width: 28%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.9;
+  right: 2%;
+  top: 1;
+}
+
+
+/* --linea del tiempo */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 3px solid #0077cc;
+}
+.timeline-item {
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 20px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background-color: #0077cc;
+  border-radius: 50%;
+  z-index: 1;
+}
+.fecha {
+  font-weight: bold;
+  color: #0077cc;
+  display: block;
+  margin-bottom: 4px;
+}
+.contenido h3 {
+  margin: 5px 0;
+}
+
+
+/* --linea del tiempo sobre mi */
+.timeline.sobre-mi {
+  padding-left: 30px;
+  border-left: 3px solid #0077cc;
+}
+.timeline.sobre-mi .timeline-item::before {
+  background-color: #0077cc;
+}
+.timeline.sobre-mi .contenido h3 {
+  color: #333;
+  font-size: 1.1em;
+}
+
+
+/* --Herramientas y tecnologias */
+.grid-herramientas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.herramienta {
+  background-color: #f0f4f8;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.herramienta:hover {
+  transform: scale(1.05);
+  background-color: #d9ecff;
+}
+
+
+/* Derechos reservados */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-size: 0.9em;
+}
